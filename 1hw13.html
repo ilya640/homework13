@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Примеры форм</title>
+
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> -->
+
+  <style>
+    body,
+    html {
+      min-height: 100vh;
+      margin: 0;
+      padding: 0 20px 20px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1rem;
+    }
+    .inline{
+        display: inline;
+    }
+
+    .input-block{
+        margin: 10px;
+    }
+    .buttons{
+        width: 190px;
+        margin: 10px auto;
+    }
+   
+  </style>
+</head>
+<body>
+  <div class="container">
+   
+
+    <form class="form"> <!-- атрибут (флаг) novalidate отключает валидацию форм по умолчанию -->
+      <fieldset>
+        <!-- Form Name -->
+        <legend>Анкета нового пользователя</legend>
+
+        <div class="input-block">
+
+            <div class="inline">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name">
+            </div>
+        </div>
+        <div class="input-block">
+            <div >
+                <label for="surname">Фамилия:</label>
+                <input type="text" name="surname" id="surname">
+            </div>
+        </div>
+        <div class="input-block">
+            <span>Укажите пол:</span>
+            <div class="inline">
+                <div class="inline">
+                    <label for="radio">мужской</label>
+                    <input type="radio" name="radio" id="radio">
+                </div>
+                <div class="inline">
+                    <label for="radio1">женский</label>
+                    <input type="radio" name="radio" id="radio1">
+                </div>
+            </div>
+        </div>
+        <div class="input-block">
+            <label for="select">Страна проживания:</label>
+            <select name="select" id="select">
+                <option value="select1">Беларусь</option>
+                <option value="select2">Россия</option>
+                <option value="select3">Казахстан</option>
+            </select>
+        </div>
+        <div class="input-block">
+            <span>Владения языками:</span>
+            <div class="inline">
+                <div class="inline">
+                    <input type="checkbox" name="checkbox" id="checkbox1">
+                    <label for="checkbox1">русский</label>
+                </div>
+                <div class="inline">
+                    <input type="checkbox" name="checkbox" id="checkbox2">
+                    <label for="checkbox2">белорусский</label>
+                </div>
+                <div class="inline">
+                    <input type="checkbox" name="checkbox" id="checkbox3">
+                    <label for="checkbox3">английский</label>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="input-block">
+            <div>
+                <label for="file">Фото профиля:</label>
+                <input type="file" name="file" id="file">
+            </div>
+        </div>
+
+        <div class="input-block">
+
+            <div class="inline">
+                <label for="login">Введите логин:</label>
+                <input type="text" id="login" name="login">
+            </div>
+        </div>
+        <div class="input-block">
+
+            <div class="inline">
+                <label for="email">Введите email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+        </div>
+
+        <div class="input-block">
+
+            <div class="inline">
+                <label for="password">Введите пароль:</label>
+                <input type="password" id="password" name="password">
+            </div>
+        </div>
+
+        <div class="input-block">
+
+            <div class="inline">
+                <label for="rpassword">Повторите пароль:</label>
+                <input type="password" id="rpassword" name="rpassword">
+            </div>
+        </div>
+        <hr>
+        <div class="input-block buttons">
+        <button type="submit" id="submit" name="submit" disabled>Отправить</button>
+        <button type="button" id="button" name="button">Отменить</button>
+    </div>
+    </fieldset>
+    </form>
+
+  </div>
+</body>
+</html>
